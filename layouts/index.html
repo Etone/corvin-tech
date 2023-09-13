@@ -1,0 +1,27 @@
+{{ define "style" }}
+<link rel="stylesheet" href="/css/home.css">
+{{ end }}
+
+{{ define "main" }}
+<div class="center">
+  <div>
+    <h1 data-value="{{ .Site.Title }}" class="title scramble">{{ .Site.Title }}</h1>
+    <div id="rotating_list_container">
+      <div class="rotating_list">
+        {{ range .Param "hero-subtitles" }}
+        <p class="rotating_list_item">{{ . }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="socials center">
+      {{- range .Param "social" }}
+        <a href="{{ .url }}" target="_blank"><i class="{{ .icon }} pre-load-icon"></i></a>
+      {{- end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="/effect/scramble.js"></script>
+{{ end }}

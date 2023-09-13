@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: flex-end;
+
+  overflow: hidden;
+  min-width: 240px;
+  max-width: 400px;
+  aspect-ratio: 10/16;
+
+  padding: 20px;
+  
+  border: var(--text-color) solid 1px;
+  border-radius: 2rem;
+}

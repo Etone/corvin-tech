@@ -1,0 +1,8 @@
+{{ define "style" }}
+<link rel="stylesheet" href="/css/single.css">
+{{ end }}
+
+{{ define "main" }}
+{{ partial "breadcrumb-navigation" . }}
+{{ .Content }}
+{{ end }}

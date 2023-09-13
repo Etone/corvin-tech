@@ -1,0 +1,106 @@
+:root {
+  --bg-color: black;
+  --text-color: white;
+  --header-height: 10vmin;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.site-header {
+  height: var(--header-height);
+}
+
+main {
+  height: calc(100vh - var(--header-height));
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+
+/* HELPER CLASSES */
+.center {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.center-vertical {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.pre-load-icon {
+  min-height: 32px;
+  min-width: 32px;
+}
+
+/* MENU BAR */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  font-size: 24px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar-item {
+  display: inline-block;
+}
+
+.navbar-item>a:hover {
+  text-decoration: underline;
+}
+
+/* CONTENT OF PAGE */
+body {
+  margin: 0 4%;
+  height: 100%
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0 8%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    margin: 0 12%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body {
+    margin: 0 18%;
+  }
+}

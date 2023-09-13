@@ -1,0 +1,11 @@
+<nav class="navbar">
+  <ul>
+    {{- range site.Menus.main }}
+    <li class="navbar-item">
+      <a href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</nav>

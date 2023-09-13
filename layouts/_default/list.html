@@ -1,0 +1,18 @@
+{{ define "style" }}
+<link rel="stylesheet" href="/css/list.css">
+{{ end }}
+
+
+{{ define "main" }}
+<section class="grid-container">
+  {{- range .RegularPages }}
+  <a href="{{ .RelPermalink }}">
+    <article class="card">
+      <header>
+        <h1>{{ .Title }}</h1>
+      </header>
+    </article>
+  </a>
+  {{- end }}
+</section>
+{{ end }}

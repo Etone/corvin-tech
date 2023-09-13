@@ -1,0 +1,69 @@
+:root {
+  --subtitle-height: 40px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 5em;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#rotating_list_container {
+  overflow: hidden;
+  height: var(--subtitle-height);
+  display: block;
+}
+
+.rotating_list {
+  animation: pan 20s ease 1s infinite;
+}
+
+.rotating_list_item {
+  text-align: center;
+  margin: 0;
+  line-height: var(--subtitle-height);
+  font-size: calc(var(--subtitle-height) - 3px);
+}
+
+@keyframes pan {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  90% {
+    transform: translateY(-16.66%);
+  }
+
+  20%,
+  80% {
+    transform: translateY(-33.33%);
+  }
+
+  30%,
+  70% {
+    transform: translateY(-49.99%);
+  }
+
+  40%,
+  60% {
+    transform: translateY(-66.66%);
+  }
+
+  50% {
+    transform: translateY(-83.33%);
+  }
+}
+
+/* SOCIALS */
+
+.socials {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  min-height: 32px;
+}
