@@ -1,6 +1,7 @@
 :root {
   --bg-color: black;
   --text-color: white;
+  --highlight-color: gold;
   --header-height: 10vmin;
 }
 
@@ -19,9 +20,6 @@ body {
   font-family: "JetBrains Mono", monospace;
 }
 
-.site-header {
-  height: var(--header-height);
-}
 
 main {
   height: calc(100vh - var(--header-height));
@@ -58,15 +56,22 @@ a {
   min-width: 32px;
 }
 
-/* MENU BAR */
+/* SITE HEADER */
+
+.site-header {
+  height: var(--header-height);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 24px;
+}
 
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   overflow: hidden;
-  font-size: 24px;
 }
 
 .navbar ul {
@@ -79,6 +84,40 @@ a {
 
 .navbar-item>a:hover {
   text-decoration: underline;
+  color: var(--highlight-color);
+}
+
+/* BREADCRUMB NAVIGATION */
+.breadcrumb {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: inline;
+  white-space: nowrap;
+}
+
+.breadcrumb li:hover {
+  color: var(--highlight-color)
+}
+
+.breadcrumb:has(li:hover)::before {
+  color: var(--highlight-color)
+}
+
+.breadcrumb li+li:before {
+  content: "/";
+  padding: 0.3rem;
+}
+
+.breadcrumb::before {
+  content: 'cd ';
+  white-space: pre;
 }
 
 /* CONTENT OF PAGE */

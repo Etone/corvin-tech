@@ -9,6 +9,18 @@
   margin-bottom: 1rem;
 }
 
+.socials {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  min-height: 32px;
+}
+
+.socials>a:hover {
+  color: var(--highlight-color);
+}
+
 #rotating_list_container {
   overflow: hidden;
   height: var(--subtitle-height);
@@ -56,14 +68,4 @@
   50% {
     transform: translateY(-83.33%);
   }
-}
-
-/* SOCIALS */
-
-.socials {
-  margin-top: 1rem;
-  display: inline-block;
-  font-size: 2rem;
-  text-align: center;
-  min-height: 32px;
 }

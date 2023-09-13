@@ -4,6 +4,8 @@
 
 
 {{ define "main" }}
+{{ partial "breadcrumb-navigation" . }}
+
 <section class="grid-container">
   {{- range .RegularPages }}
   <a href="{{ .RelPermalink }}">
