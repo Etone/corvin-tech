@@ -17,12 +17,13 @@
   aspect-ratio: 8/10;
   padding: 20px;
 
-  border: var(--text-color) solid 1px;
+  border: var(--clr-text) solid 3px;
   border-radius: 2rem;
 
   position: relative;
 }
 
 .card:hover {
-  border-color: var(--highlight-color);
+  border-color: var(--clr-highlight-contrast);
+  color: var(--clr-highlight);
 }

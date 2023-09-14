@@ -1,3 +1,7 @@
+{{ if not .IsHome }}
+  <a href="{{ .Site.BaseURL }}" class="logo"><span>CORVIN</span><span>.</span><span>TECH</span></div></a>
+{{ end }}
+
 <nav class="navbar">
   <ul>
     {{- range site.Menus.main }}

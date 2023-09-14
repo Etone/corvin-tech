@@ -1,12 +1,28 @@
 :root {
-  --subtitle-height: 40px;
+  --height-subtitle: 40px;
 }
 
 .title {
   text-transform: uppercase;
-  font-size: 5em;
+  font-size: 5rem;
+
+  /* This is one way to assign specific letters a color with scramble*/
+  background: linear-gradient(to right, 
+  var(--clr-highlight) 55%, 
+  var(--clr-highlight-gradient) 55%, 
+  var(--clr-highlight-gradient) 63.6%, 
+  var(--clr-highlight-contrast) 63.6%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
   margin: 0;
   margin-bottom: 1rem;
+}
+
+.site-header {
+  justify-content: flex-end;
 }
 
 .socials {
@@ -18,12 +34,12 @@
 }
 
 .socials>a:hover {
-  color: var(--highlight-color);
+  color: var(--clr-highlight);
 }
 
 #rotating_list_container {
   overflow: hidden;
-  height: var(--subtitle-height);
+  height: var(--height-subtitle);
   display: block;
 }
 
@@ -34,8 +50,8 @@
 .rotating_list_item {
   text-align: center;
   margin: 0;
-  line-height: var(--subtitle-height);
-  font-size: calc(var(--subtitle-height) - 3px);
+  line-height: var(--height-subtitle);
+  font-size: calc(var(--height-subtitle) - 3px);
 }
 
 @keyframes pan {
