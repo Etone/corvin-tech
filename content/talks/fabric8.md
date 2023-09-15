@@ -10,8 +10,12 @@ Kubernetes has established itself as the de-facto open source standard for conta
 
 We want to share this experience with the audience in this talk with many live examples, report on experiences and problems in "high scale" and show how the API has helped us successfully.
 
-## Resources
+## Slides
 
-### Recording JCON 2020
+Will be uploaded shortly, Sorry
+
+## Recordings
+
+### JCON 2020 (german)
 
 {{<youtube LyWBqFtb2io>}}

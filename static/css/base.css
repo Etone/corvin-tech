@@ -31,11 +31,6 @@ body {
 }
 
 
-main {
-  height: calc(100vh - var(--height-header) - 16px);
-  /* -16px removes scrolling, which is present for whatever reason */
-}
-
 a {
   text-decoration: none;
   color: currentColor;
@@ -48,6 +43,14 @@ a {
   place-items: center;
   width: 100%;
   height: 100%;
+}
+
+.center-on-screen {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: calc(100vh - var(--height-header) - 16px)
+
 }
 
 .center-h,

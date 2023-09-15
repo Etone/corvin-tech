@@ -3,16 +3,10 @@
 {{ end }}
 
 {{ define "main" }}
-<h1 class="center-h header">{{ .Title }}</h1>
-
 <div class="grid-container">
-  <section class="toc">
-    <h2>Table of Content</h2>
-    {{ .TableOfContents }}
-  </section>
+  <h1 class="center-h header">{{ .Title }}</h1>
   <section class="content">
     {{ .Content }}
   </section>
 </div>
-
 {{ end }}
