@@ -4,12 +4,12 @@
 
 
 {{ define "main" }}
-
+<section class="front-matter">{{ .Content }}</section>
 <section class="grid-container">
   {{- range .RegularPages }}
   <a href="{{ .RelPermalink }}">
     <article class="card scramble">
-        <h1>{{ .Title }}</h1>
+      <h1>{{ .Title }}</h1>
     </article>
   </a>
   {{- end }}
