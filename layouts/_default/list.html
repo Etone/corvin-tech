@@ -1,0 +1,22 @@
+{{ define "style" }}
+<link rel="stylesheet" href="/css/list.css">
+{{ end }}
+
+
+{{ define "main" }}
+{{ partial "breadcrumb-navigation" . }}
+
+<section class="grid-container">
+  {{- range .RegularPages }}
+  <a href="{{ .RelPermalink }}">
+    <article class="card scramble">
+        <h1>{{ .Title }}</h1>
+    </article>
+  </a>
+  {{- end }}
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="/effect/scramble.js"></script>
+{{ end }}

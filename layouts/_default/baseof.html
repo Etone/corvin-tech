@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+  {{ partial "meta" . }}
+  {{ block "style" . }}
+  {{ end }}
+</head>
+
+<body>
+  <header class="site-header">
+    {{ partial "header" . }}
+  </header>
+  <main>
+    {{ block "main" . }}
+    {{ end }}
+  </main>
+  <script src="https://kit.fontawesome.com/0d0bec28ca.js" crossorigin="anonymous"></script>
+  {{ block "scripts" . }}
+  {{ end }}
+</body>
+
+</html>

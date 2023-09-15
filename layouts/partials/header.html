@@ -1,0 +1,15 @@
+{{ if not .IsHome }}
+  <a href="{{ .Site.Home.RelPermalink }}" class="logo"><span>CORVIN</span><span>.</span><span>TECH</span></div></a>
+{{ end }}
+
+<nav class="navbar">
+  <ul>
+    {{- range site.Menus.main }}
+    <li class="navbar-item">
+      <a href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</nav>
