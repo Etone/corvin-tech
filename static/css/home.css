@@ -38,7 +38,7 @@
   }
 }
 
-.socials #rotating_list_container {
+#rotating_list_container {
   overflow: hidden;
   height: var(--height-subtitle);
   display: block;
