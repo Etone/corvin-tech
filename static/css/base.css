@@ -50,12 +50,14 @@ a {
   height: 100%;
 }
 
+.center-h,
 .center-horizontal {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
+.center-v,
 .center-vertical {
   display: flex;
   align-items: center;

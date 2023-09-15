@@ -3,6 +3,16 @@
 {{ end }}
 
 {{ define "main" }}
-{{ partial "breadcrumb-navigation" . }}
-{{ .Content }}
+<h1 class="center-h header">{{ .Title }}</h1>
+
+<div class="grid-container">
+  <section class="toc">
+    <h2>Table of Content</h2>
+    {{ .TableOfContents }}
+  </section>
+  <section class="content">
+    {{ .Content }}
+  </section>
+</div>
+
 {{ end }}

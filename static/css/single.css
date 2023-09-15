@@ -1,0 +1,36 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  gap: 3rem;
+
+  & h2 {
+    color: var(--clr-highlight-contrast)
+  }
+
+  & h3 {
+    color: var(--clr-highlight-gradient)
+  }
+
+}
+
+.header {
+  color: var(--clr-highlight)
+}
+
+.toc {
+  grid-column: 2 / -1;
+
+  line-height: normal;
+
+  & li {
+    list-style: none;
+  }
+}
+
+.content {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+
+  line-height: normal;
+  font-size: 1.25rem;
+}
