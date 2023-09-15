@@ -7,11 +7,11 @@
   font-size: 5rem;
 
   /* This is one way to assign specific letters a color with scramble*/
-  background: linear-gradient(to right, 
-  var(--clr-highlight) 55%, 
-  var(--clr-highlight-gradient) 55%, 
-  var(--clr-highlight-gradient) 63.6%, 
-  var(--clr-highlight-contrast) 63.6%);
+  background: linear-gradient(to right,
+      var(--clr-highlight) 55%,
+      var(--clr-highlight-gradient) 55%,
+      var(--clr-highlight-gradient) 63.6%,
+      var(--clr-highlight-contrast) 63.6%);
 
   background-clip: text;
   -webkit-background-clip: text;
@@ -22,6 +22,7 @@
 }
 
 .site-header {
+  /*Overwrite content justification so its on the right side of screen*/
   justify-content: flex-end;
 }
 
@@ -31,27 +32,27 @@
   font-size: 2rem;
   text-align: center;
   min-height: 32px;
+
+  &>a:hover {
+    color: var(--clr-highlight);
+  }
 }
 
-.socials>a:hover {
-  color: var(--clr-highlight);
-}
-
-#rotating_list_container {
+.socials #rotating_list_container {
   overflow: hidden;
   height: var(--height-subtitle);
   display: block;
-}
 
-.rotating_list {
-  animation: pan 20s ease 1s infinite;
-}
+  & .rotating_list {
+    animation: pan 20s ease 1s infinite;
 
-.rotating_list_item {
-  text-align: center;
-  margin: 0;
-  line-height: var(--height-subtitle);
-  font-size: calc(var(--height-subtitle) - 3px);
+    & .rotating_list_item {
+      text-align: center;
+      margin: 0;
+      line-height: var(--height-subtitle);
+      font-size: calc(var(--height-subtitle) - 3px);
+    }
+  }
 }
 
 @keyframes pan {

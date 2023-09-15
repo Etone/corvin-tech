@@ -32,7 +32,7 @@ body {
 
 
 main {
-  height: calc(100vh - var(--height-header));
+  height: calc(100vh - var(--height-header) - 16px); /* -16px removes scrolling, which is present for whatever reason */
 }
 
 a {
@@ -82,20 +82,23 @@ a {
   flex-direction: row;
   align-items: center;
   overflow: hidden;
-}
 
-.navbar ul {
-  list-style: none;
+  font-size: 2rem;
+
+  & ul {
+    list-style: none;
+  }
 }
 
 .navbar-item {
   display: inline-block;
+
+  & a:hover {
+    text-decoration: underline solid var(--clr-highlight-contrast);
+    color: var(--clr-highlight);
+  }
 }
 
-.navbar-item>a:hover {
-  text-decoration: underline solid var(--clr-highlight-contrast);
-  color: var(--clr-highlight);
-}
 
 /* BREADCRUMB NAVIGATION */
 .breadcrumb {
@@ -105,25 +108,26 @@ a {
   flex-wrap: wrap;
   align-items: baseline;
   padding: 0;
-}
 
-.breadcrumb li {
-  display: inline;
-  white-space: nowrap;
-}
+  & li {
+    display: inline;
+    white-space: nowrap;
 
-.breadcrumb li:hover {
-  color: var(--clr-highlight)
+    & :hover {
+      color: var(--clr-highlight)
+    }
+  }
+
+  & li+li:before {
+    content: "/";
+    padding: 0.3rem;
+  }
 }
 
 .breadcrumb:has(li:hover)::before {
   color: var(--clr-highlight-contrast)
 }
 
-.breadcrumb li+li:before {
-  content: "/";
-  padding: 0.3rem;
-}
 
 .breadcrumb::before {
   content: 'cd ';
@@ -155,19 +159,21 @@ body {
 }
 
 /* LOGO */
-.logo>span {
-  font-weight: 700;
-  font-size: 2.5rem;
-}
+.logo {
+  &>span {
+    font-weight: 700;
+    font-size: 2.5rem;
 
-.logo>span:nth-of-type(1) {
-  color: var(--clr-highlight)
-}
+    &:nth-of-type(1) {
+      color: var(--clr-highlight);
+    }
 
-.logo>span:nth-of-type(2) {
-  color: var(--clr-highlight-gradient)
-}
+    &:nth-of-type(2) {
+      color: var(--clr-highlight-gradient)
+    }
 
-.logo>span:nth-of-type(3) {
-  color: var(--clr-highlight-contrast)
+    &:nth-of-type(3) {
+      color: var(--clr-highlight-contrast)
+    }
+  }
 }
