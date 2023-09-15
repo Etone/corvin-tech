@@ -9,12 +9,14 @@
 <section class="grid-container">
   {{- range .RegularPages }}
   <a href="{{ .RelPermalink }}">
-    <article class="card">
-      <header>
+    <article class="card scramble">
         <h1>{{ .Title }}</h1>
-      </header>
     </article>
   </a>
   {{- end }}
 </section>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="/effect/scramble.js"></script>
 {{ end }}
