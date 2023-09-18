@@ -11,7 +11,7 @@ One way to reduce complexity is to delegate as much as possible to kubernetes us
 In this talk, I want to show how one can use operators, how to implement them and what value Kubernetes Operators can bring to any cloud native journey.
 
 ## Slides
-[Using and Developing Kubernetes Operators](/slides/k8s-operators.pdf "Slides")
+[Using and Developing Kubernetes Operators](https://speakerdeck.com/etone/using-and-developing-k8s-operators "Slides")
 ## Recordings
 
 ### Container Days 2022

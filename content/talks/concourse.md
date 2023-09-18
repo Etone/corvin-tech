@@ -16,7 +16,7 @@ This talk will show how Concourse works, how we use it in our daily work and ske
 
 ## Slides
 
-[Concourse in Action](/slides/concourse-in-action.pdf "Slides")
+[Concourse in Action](https://speakerdeck.com/etone/concourse-in-action "Slides")
 
 ## Recordings
 
