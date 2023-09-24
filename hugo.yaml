@@ -1,0 +1,36 @@
+baseURL: 'https://www.corvin.tech'
+languageCode: en-us
+title: Corvin.Tech
+
+menu:
+  main:
+    - name: Talks
+      pageRef: /talks
+      weight: 10
+    - name: Projects
+      pageRef: /projects
+      weight: 20
+params:
+  hero-subtitles:
+    - Cloud Native
+    - Public Speaker
+    - Podcast Host
+    - University Lecturer
+    - Lego Builder
+    - Taskmaster Enthusiast
+  social:
+    - icon: fa-brands fa-linkedin
+      url: 'https://www.linkedin.com/in/corvin-schapöhler/'
+    - icon: fa-brands fa-github
+      url: 'https://github.com/Etone'
+    - icon: fa-brands fa-codepen
+      url: 'https://codepen.io/Etone'
+    - icon: fa-regular fa-envelope
+      url: 'mailto:co.schapoehler@gmail.com'
+related:
+  threshold: 0
+  includeNewer: true
+  toLower: false
+  indices:
+    - name: date
+      weight: '100'

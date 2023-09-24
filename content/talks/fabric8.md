@@ -2,6 +2,7 @@
 title: "Using Fabric8 to dynamically create workloads on Kubernetes"
 date: 2020-12-16T23:23:15+02:00
 draft: false
+keywords: [kubernetes,fabric8,java]
 ---
 
 ## Abstract

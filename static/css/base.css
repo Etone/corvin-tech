@@ -12,6 +12,10 @@
   --clr-highlight-contrast: var(--electric-blue);
   --clr-highlight-gradient: var(--chili-red);
 
+  --clr-highlight-1: var(--aureolin);
+  --clr-highlight-2: var(--electric-blue);
+  --clr-highlight-3: var(--chili-red);
+
   --height-header: 10vmin;
 }
 
@@ -28,6 +32,8 @@ body {
   background: var(--clr-background);
   color: var(--clr-text);
   font-family: "JetBrains Mono", monospace;
+
+  margin: 0 2%;
 }
 
 
@@ -135,28 +141,6 @@ a {
 .breadcrumb:has(li:hover)::before {
   color: var(--clr-highlight-contrast)
 }
-
-
-/* CONTENT OF PAGE */
-body {
-
-  @media screen and (min-width: 1024px) {
-    margin: 0 8%;
-  }
-
-  @media screen and (min-width: 1920px) {
-    margin: 0 12%;
-  }
-
-  @media screen and (min-width: 2560px) {
-    margin: 0 18%;
-
-  }
-
-  margin: 0 4%;
-  height: 100%
-}
-
 
 /* LOGO */
 .logo {
