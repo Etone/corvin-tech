@@ -11,10 +11,14 @@
   <header class="site-header">
     {{ partial "header" . }}
   </header>
-  <main>
+  <main class="site-main">
     {{ block "main" . }}
     {{ end }}
   </main>
+  <footer class="site-footer">
+    {{ block "footer" . }}
+    {{ end }}
+  </footer>
   <script src="https://kit.fontawesome.com/0d0bec28ca.js" crossorigin="anonymous"></script>
   {{ block "scripts" . }}
   {{ end }}
