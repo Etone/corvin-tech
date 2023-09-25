@@ -1,5 +1,16 @@
+{{ define "style" }}
+  <link rel="stylesheet" href="/css/404.css">
+{{ end }}
 {{ define "main" }}
-<div class="container">
-  <h1>404 - Not Found</h1>
+<div class="center-on-screen content">
+  <div>
+    <i class="fa-solid fa-binoculars center-h search"></i>
+    <h1 class="scramble">Couldn't find this, sorry</h1>
+    <a href="{{ .Site.Home.RelPermalink }}" class="home center-h">Get back home</a>
+  </div>
 </div>
+{{ end }}
+
+{{ define "scripts" }}
+  <script src="/effect/scramble.js"></script>
 {{ end }}

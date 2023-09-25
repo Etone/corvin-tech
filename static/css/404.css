@@ -1,0 +1,13 @@
+.content {
+    font-size: 3rem;
+    color: var(--clr-highlight-1);
+
+    & .search {
+      color: var(--clr-highlight-3);
+    }
+
+    & .home {
+      color: var(--clr-highlight-2);
+      text-decoration: underline;
+    }
+}
