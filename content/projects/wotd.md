@@ -1,8 +1,10 @@
 ---
-title: "Workout of the day Tracker"
+title: "Archived - Workout of the day Tracker"
 date: 2023-09-05T21:17:05+02:00
 draft: false
 ---
+
+## NOTE: Since Hybrid Caleshenics released an app, which you should check out, I will not maintain or develop this any further (not that I have done in the last few months)
 ## Notes for later writing
 
 - Tacking Workout of the day by Hybrid Calesthenics
