@@ -9,7 +9,7 @@
   {{- range .RegularPages }}
   <a href="{{ .RelPermalink }}">
     <article class="card scramble">
-      <h1>{{ .Title }}</h1>
+      <h2>{{ if .Params.archived }}Archived - {{ end }}{{ .Title }}</h2>
     </article>
   </a>
   {{- end }}

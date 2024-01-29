@@ -1,5 +1,5 @@
 ---
-title: "Good Bad Ugly"
+title: "Kubernetes, the good, the bad and the ugly"
 date: 2023-09-13T14:53:33+02:00
 draft: false
 keywords: [kubernetes]
