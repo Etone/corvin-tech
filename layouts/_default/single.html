@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-<h1 class="center-h header">{{ .Title }}</h1>
+<h1 class="center-h header">{{ if .Params.archived }}ARCHIVED - {{ end }}{{ .Title }}</h1>
 <div class="grid-container">
   <section class="content">
     {{ .Content }}

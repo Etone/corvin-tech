@@ -8,7 +8,7 @@ archived: false
 
 ## Keypoints
 
-- Support for STACKIT for [Morpheus Data](https://morpheusdata.com/)
+- Support for STACKIT Cloud for [Morpheus Data](https://morpheusdata.com/)
 
 ## Used Technologies
 

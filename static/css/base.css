@@ -109,39 +109,6 @@ a {
   }
 }
 
-
-.breadcrumb {
-  list-style: none;
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  padding: 0;
-
-  & li {
-    display: inline;
-    white-space: nowrap;
-
-    & :hover {
-      color: var(--clr-highlight)
-    }
-  }
-
-  & li+li:before {
-    content: "/";
-    padding: 0.3rem;
-  }
-}
-
-.breadcrumb::before {
-  content: 'cd ';
-  white-space: pre;
-}
-
-.breadcrumb:has(li:hover)::before {
-  color: var(--clr-highlight-contrast)
-}
-
 /* LOGO */
 .logo {
   &>span {
