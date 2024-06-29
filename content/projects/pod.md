@@ -18,9 +18,5 @@ Im really in the begingn of this. Currently there is basically more conceptual w
 - Add initial setup for first "Environment" with tools beeing hosted on
 - Add Tekton, ArgoCD and Crossplane as first tools to allow developers to easily implement, test and deploy automatically to Kubernetes
 
-## Used technology
-
-Terraform
-
 ## Further resources
-- [Repository](http://pod.corvin.tech) - Might take a while to redirect to Github
+- [Repository](http://pod.corvin.tech)
