@@ -61,10 +61,6 @@ const scrambleElement = function (element) {
   }, 1000 / (targetText.length * 3));
 };
 
-document.querySelectorAll(".scramble").forEach((element) => {
-  element.onmouseover = () => { scrambleElement(element) }
-})
-
 window.onload = () => {
   document.querySelectorAll(".scramble").forEach((element) => {
     element.dataset.value = getTextNode(element).innerText
