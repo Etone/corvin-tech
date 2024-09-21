@@ -11,7 +11,8 @@ As I want to dive deeper into topics surrounding kuberetes, I decided to build a
 
 ## Current development state
 
-Im really in the begingn of this. Currently there is basically more conceptual work of what is needed.
+Currently, there is a running version 0.1 of POD. A kubernetes cluster with some tooling configured and installed.
+For more info, check the repository.
 
 ## Ideas for the future
 
@@ -19,4 +20,4 @@ Im really in the begingn of this. Currently there is basically more conceptual w
 - Add Tekton, ArgoCD and Crossplane as first tools to allow developers to easily implement, test and deploy automatically to Kubernetes
 
 ## Further resources
-- [Repository](http://pod.corvin.tech)
+- [Repository](https://github.com/NovatecConsulting/POD)
