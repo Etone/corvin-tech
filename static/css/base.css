@@ -179,13 +179,18 @@ input[name="theme"]:checked::before {
 }
 
 /* 
-change the theme by changing all variables to dark 
-(or light, depending on your base)
+change the theme by changing all variables
 */
-:has(input[name="theme"]:checked) {
+html[data-theme="dark"] {
   --clr-background: var(--clr-background-dark);
   --clr-text: var(--clr-text-dark);
 }
+
+html[data-theme="light"] {
+  --clr-background: var(--clr-background-light);
+  --clr-text: var(--clr-text-light);
+}
+
 
 /* We want a label for accessibility, but want to hide it */
 label[for="theme"] {
