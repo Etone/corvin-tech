@@ -26,8 +26,8 @@
   --height-header: 10vmin;
 
   /* must be even number to perfectly align circle in */
-  --dark-mode-toggle-width: 48px;
-  --dark-mode-toggle-padding: 2px;
+  --dark-mode-toggle-width: 56px;
+  --dark-mode-toggle-padding: 4px;
 }
 
 * {
@@ -178,6 +178,15 @@ input[name="theme"]:checked::before {
   transition: left 0.5s;
 }
 
+/* We want a label for accessibility, but want to hide it */
+label[for="theme"] {
+  display: inline-block;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
 /* 
 change the theme by changing all variables
 */
@@ -189,15 +198,4 @@ html[data-theme="dark"] {
 html[data-theme="light"] {
   --clr-background: var(--clr-background-light);
   --clr-text: var(--clr-text-light);
-}
-
-
-/* We want a label for accessibility, but want to hide it */
-label[for="theme"] {
-  display: inline-block;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
 }
