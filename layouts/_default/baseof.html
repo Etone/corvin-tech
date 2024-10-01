@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang=en>
-
+<html lang=en data-theme="dark">
 <head>
+
   {{ partial "meta" . }}
   {{ block "style" . }}
   {{ end }}
+  <script src="/effect/onload-dark-mode.js"></script>
 </head>
 
 <body>
@@ -22,6 +23,7 @@
   <script src="https://kit.fontawesome.com/0d0bec28ca.js" crossorigin="anonymous"></script>
   {{ block "scripts" . }}
   {{ end }}
+  <script src="/effect/dark-mode.js"></script>
 </body>
 
 </html>
