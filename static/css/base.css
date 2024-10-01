@@ -6,8 +6,8 @@
   --electric-blue: #00f0ffff;
   --chili-red: #ca3c25ff;
 
-  --clr-background: var(--black);
-  --clr-text: var(--white);
+  --clr-background: var(--clr-background-light);
+  --clr-text: var(--clr-text-light);
   --clr-highlight: var(--aureolin);
   --clr-highlight-contrast: var(--electric-blue);
   --clr-highlight-gradient: var(--chili-red);
@@ -16,7 +16,18 @@
   --clr-highlight-2: var(--electric-blue);
   --clr-highlight-3: var(--chili-red);
 
+  --clr-background-dark: var(--black);
+  --clr-background-light: var(--white);
+
+  --clr-text-dark: var(--white);
+  --clr-text-light: var(--black);
+
+
   --height-header: 10vmin;
+
+  /* must be even number to perfectly align circle in */
+  --dark-mode-toggle-width: 48px;
+  --dark-mode-toggle-padding: 2px;
 }
 
 * {
@@ -56,7 +67,6 @@ a {
   place-items: center;
   width: 100%;
   height: calc(100vh - var(--height-header) - 16px)
-
 }
 
 .center-h,
@@ -127,4 +137,62 @@ a {
       color: var(--clr-highlight-contrast)
     }
   }
+}
+
+/* DARK MODE TOGGLE */
+input[name="theme"] {
+  appearance: none;
+
+  position: relative;
+
+  background: var(--clr-background);
+
+  width: var(--dark-mode-toggle-width);
+  aspect-ratio: 2/1;
+  border-radius: calc((var(--dark-mode-toggle-width) / 2) / 2);
+  border: 1px solid var(--clr-text);
+}
+
+input[name="theme"]::before {
+  content: "";
+
+  display: block;
+  position: absolute;
+
+  width: calc((var(--dark-mode-toggle-width)/2) - (var(--dark-mode-toggle-padding) * 2) - 1px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--clr-text);
+}
+
+/* This slides the Button to the other side */
+input[name="theme"]:not(checked)::before {
+  top: var(--dark-mode-toggle-padding);
+  left: var(--dark-mode-toggle-padding);
+  transition: left 0.5s;
+}
+
+input[name="theme"]:checked::before {
+  top: var(--dark-mode-toggle-padding);
+  left: calc(var(--dark-mode-toggle-width) - ((var(--dark-mode-toggle-width)/2) - (var(--dark-mode-toggle-padding) * 2) - 1px) - (var(--dark-mode-toggle-padding) * 2));
+  transition: left 0.5s;
+}
+
+/* 
+change the theme by changing all variables to dark 
+(or light, depending on your base)
+*/
+:has(input[name="theme"]:checked) {
+  --clr-background: var(--clr-background-dark);
+  --clr-text: var(--clr-text-dark);
+}
+
+/* We want a label for accessibility, but want to hide it */
+label[for="theme"] {
+  display: inline-block;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
