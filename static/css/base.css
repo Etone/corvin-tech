@@ -151,31 +151,30 @@ input[name="theme"] {
   aspect-ratio: 2/1;
   border-radius: calc((var(--dark-mode-toggle-width) / 2) / 2);
   border: 1px solid var(--clr-text);
-}
 
-input[name="theme"]::before {
-  content: "";
+  &::before {
+    content: "";
 
-  display: block;
-  position: absolute;
+    display: block;
+    position: absolute;
 
-  width: calc((var(--dark-mode-toggle-width)/2) - (var(--dark-mode-toggle-padding) * 2) - 1px);
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background-color: var(--clr-text);
-}
+    width: calc((var(--dark-mode-toggle-width)/2) - (var(--dark-mode-toggle-padding) * 2) - 1px);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--clr-text);
+  }
 
-/* This slides the Button to the other side */
-input[name="theme"]:not(checked)::before {
-  top: var(--dark-mode-toggle-padding);
-  left: var(--dark-mode-toggle-padding);
-  transition: left 0.5s;
-}
+  &:not(checked)::before {
+    top: var(--dark-mode-toggle-padding);
+    left: var(--dark-mode-toggle-padding);
+    transition: left 0.5s;
+  }
 
-input[name="theme"]:checked::before {
-  top: var(--dark-mode-toggle-padding);
-  left: calc(var(--dark-mode-toggle-width) - ((var(--dark-mode-toggle-width)/2) - (var(--dark-mode-toggle-padding) * 2) - 1px) - (var(--dark-mode-toggle-padding) * 2));
-  transition: left 0.5s;
+  &:checked::before {
+    top: var(--dark-mode-toggle-padding);
+    left: calc(var(--dark-mode-toggle-width) - ((var(--dark-mode-toggle-width)/2) - (var(--dark-mode-toggle-padding) * 2) - 1px) - (var(--dark-mode-toggle-padding) * 2));
+    transition: left 0.5s;
+  }
 }
 
 /* We want a label for accessibility, but want to hide it */
@@ -187,6 +186,7 @@ label[for="theme"] {
   margin: 0;
   padding: 0;
 }
+
 /* 
 change the theme by changing all variables
 */
