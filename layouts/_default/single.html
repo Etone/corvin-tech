@@ -19,7 +19,15 @@
   </section>
   <section class="sidebar">
     <h3>See also</h3>
-    <p>Currently working on this</p>
+    <ul>
+    {{ with .Site.RegularPages.Related . | first 5 }}
+      {{ range . }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    {{ else }}
+      <li>No related content, sorry</li>
+    {{ end }}
+  </ul>
   </section>
 </div>
 {{ end }}

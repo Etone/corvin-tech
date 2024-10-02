@@ -4,6 +4,7 @@ date: 2022-12-31T00:00:00+01:00
 draft: false
 categories: [professional]
 archived: false
+tags: [Cloud, Java, Spring Boot, fabric8, Kubernetes, Operator, Vue, Concourse]
 ---
 
 ## Keypoints

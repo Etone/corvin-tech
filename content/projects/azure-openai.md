@@ -4,6 +4,7 @@ date: 2023-12-17T09:26:16+01:00
 draft: false
 categories: [professional]
 archived: false
+tags: [Cloud, python, Azure, OpenAI, GenAI, Azure App Services]
 ---
 
 ## Keypoints

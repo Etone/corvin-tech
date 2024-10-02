@@ -29,3 +29,14 @@ params:
       url: 'https://codepen.io/Etone'
     - icon: fa-regular fa-envelope
       url: 'mailto:co.schapoehler@gmail.com'
+
+related:
+  includeNewer: true
+  indices:
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: tags
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 100

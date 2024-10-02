@@ -2,6 +2,7 @@
 title: "Establishing AI based applications and automations in financial sector"
 date: 2024-09-21T13:00:05+02:00
 draft: true
+tags: [Cloud, python, next.js, Azure, OpenAI, GenAI, Azure App Services, Terraform]
 ---
 
 

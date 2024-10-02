@@ -2,7 +2,7 @@
 title: "Concourse in Action"
 date: 2021-11-09T23:24:17+02:00
 draft: false
-keywords: [cicd,concourse,pipeline]
+tags: [cicd,concourse,pipeline]
 ---
 
 
