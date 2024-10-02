@@ -98,8 +98,8 @@ a {
 
   & .navbar {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 
     font-size: 2rem;
@@ -145,8 +145,6 @@ input[name="theme"] {
 
   position: relative;
 
-  background: var(--clr-background);
-
   width: var(--dark-mode-toggle-width);
   aspect-ratio: 2/1;
   border-radius: calc((var(--dark-mode-toggle-width) / 2) / 2);
@@ -179,7 +177,7 @@ input[name="theme"] {
 
 /* We want a label for accessibility, but want to hide it */
 label[for="theme"] {
-  display: inline-block;
+  display: none;
   visibility: hidden;
   width: 0;
   height: 0;
