@@ -6,13 +6,22 @@
 {{ define "main" }}
 <section class="front-matter">{{ .Content }}</section>
 <section class="grid-container">
+
   {{- range .RegularPages }}
   <a href="{{ .RelPermalink }}">
-    <article class="card scramble">
-      <h2>{{ if .Params.archived }}Archived - {{ end }}{{ .Title }}</h2>
+    {{ with .Resources.Get "thumbnail.png" }}
+      {{ with .Crop "350x350" }}
+        <article class="card background-image scramble">
+        <img src="{{ .RelPermalink }}" />
+      {{ end }}
+    {{ else }}
+    <article class="card background-pattern scramble">
+    {{ end }}
+      <h2>{{ .Title }}</h2>
     </article>
   </a>
   {{- end }}
+
 </section>
 {{ end }}
 

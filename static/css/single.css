@@ -13,9 +13,26 @@
 
 }
 
-.header {
-  color: var(--clr-highlight);
-  text-align: center;
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30vh;
+  overflow: hidden;
+
+  & img {
+    filter: saturate(0) opacity(15%);
+  }
+
+  & h1.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--clr-highlight);
+  }
 }
 
 .content {

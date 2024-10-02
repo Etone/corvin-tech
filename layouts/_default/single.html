@@ -3,7 +3,16 @@
 {{ end }}
 
 {{ define "main" }}
-<h1 class="center-h header">{{ if .Params.archived }}ARCHIVED - {{ end }}{{ .Title }}</h1>
+
+
+<div class="hero">
+    {{ with .Resources.Get "hero.png" }}
+      {{ with .Crop "4000x400" }}
+        <img src="{{ .RelPermalink }}" />
+      {{ end }}
+    {{ end }}
+  <h1 class="center-h header">{{ .Title }}</h1>
+</div>
 <div class="grid-container">
   <section class="content">
     {{ .Content }}

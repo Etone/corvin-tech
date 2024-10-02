@@ -6,6 +6,7 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,15 +21,38 @@
   border: var(--clr-text) solid 3px;
   border-radius: 2rem;
 
-  background-image: radial-gradient(circle at 1px 1px, var(--clr-text) 1px, transparent 0);
-  background-size: 35px 35px;
-} 
+  & h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
 
 .card:hover {
   border-color: var(--clr-highlight-2);
   color: var(--clr-highlight-1);
-
-  background-image: radial-gradient(circle at 1px 1px, var(--clr-highlight-3) 1px, transparent 0);
-  background-size: 35px 35px;
 }
 
+.card.background-pattern {
+  background-image: radial-gradient(circle at 1px 1px, var(--clr-text) 1px, transparent 0);
+  background-size: 35px 35px;
+
+  &:hover {
+    background-image: radial-gradient(circle at 1px 1px, var(--clr-highlight-3) 1px, transparent 0);
+    background-size: 35px 35px;
+  }
+}
+
+.card.background-image {
+  & img {
+    filter: saturate(0) opacity(30%);
+  }
+}
+
+.card.background-image:hover {
+  & img {
+    filter: saturate(50%) opacity(50%);
+  }
+}
