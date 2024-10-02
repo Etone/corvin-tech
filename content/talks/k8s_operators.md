@@ -2,7 +2,7 @@
 title: "Kubernetes made simpler - Using and developing Kubernetes Operators"
 date: 2022-09-21T23:22:17+02:00
 draft: false
-keywords: [kubernetes,azure,java,fabric8]
+tags: [kubernetes, azure, java, fabric8, helm]
 ---
 ## Abstract
 

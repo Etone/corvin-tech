@@ -4,6 +4,7 @@ date: 2023-12-31T00:00:00+01:00
 draft: false
 categories: [professional]
 archived: false
+tags: [SaaS, Cloud, Kubernetes, Enterprise, Kafka, Terraform, Spring Boot, Java]
 ---
 
 ## Keypoints

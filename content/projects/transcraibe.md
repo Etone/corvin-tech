@@ -2,6 +2,9 @@
 title: "TranscrAIbe"
 date: 2024-10-01T11:48:16+02:00
 draft: false
+categories: [private, professional]
+archived: false
+tags: [OpenAI, Cloud, Azure, Kubernetes, Java, Micronaut, Azure AI Services]
 ---
 
 ## Keypoints

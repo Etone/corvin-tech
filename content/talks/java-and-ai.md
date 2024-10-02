@@ -1,7 +1,8 @@
 ---
 title: "Java and AI"
 date: 2024-10-01T11:41:20+02:00
-draft: 
+draft: false
+tags: [ai, java, micronaut, spring boot, openai]
 ---
 
 ## Abstract

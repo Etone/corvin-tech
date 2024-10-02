@@ -4,6 +4,7 @@ date: 2023-09-05T21:17:05+02:00
 draft: false
 categories: [private]
 archived: true
+tags: [Vue, Azure Stratic Web app]
 ---
 
 ## NOTE: Since Hybrid Caleshenics released an app, which you should check out, I will not maintain or develop this any further (not that I have done in the last few months)
