@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
 
-  height: 30vh;
+  height: 25vh;
   overflow: hidden;
 
   & img {
@@ -41,9 +41,12 @@
 
   & h1.header {
     position: absolute;
+
+    margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    
     color: var(--clr-highlight);
   }
 }

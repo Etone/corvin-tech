@@ -7,7 +7,7 @@
 
 <div class="hero">
     {{ with .Resources.Get "hero.png" }}
-      {{ with .Crop "4000x400" }}
+      {{ with .Crop "4000x800" }}
         <img src="{{ .RelPermalink }}" />
       {{ end }}
     {{ end }}
