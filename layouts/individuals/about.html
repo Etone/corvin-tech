@@ -1,0 +1,41 @@
+{{ define "style" }}
+<link rel="stylesheet" href="/css/about.css">
+{{ end }}
+
+{{ define "main" }}
+<div>
+  <section>
+    {{ .Content }}
+  </section>
+  <section>
+    <h1> Skills </h1>
+    <div class="skill-square">
+      <div class="square" data-square="50"></div>
+      <div class="square" data-square="35"></div>
+      <div class="square" data-square="27"></div>
+      <div class="square" data-square="8"></div>
+      <div class="square" data-square="19"></div>
+      <div class="square" data-square="15"></div>
+      <div class="square" data-square="17"></div>
+      <div class="square" data-square="11"></div>
+      <div class="square" data-square="6"></div>
+      <div class="square" data-square="24"></div>
+      <div class="square" data-square="29"></div>
+      <div class="square" data-square="25"></div>
+      <div class="square" data-square="9"></div>
+      <div class="square" data-square="2"></div>
+      <div class="square" data-square="7"></div>
+      <div class="square" data-square="18"></div>
+      <div class="square" data-square="16"></div>
+      <div class="square" data-square="42"></div>
+      <div class="square" data-square="4"></div>
+      <div class="square" data-square="37"></div>
+      <div class="square" data-square="33"></div>
+    </div>
+  </section>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="/effect/squared-square.js" />
+{{ end }}
