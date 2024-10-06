@@ -13,10 +13,9 @@ tags: []
     {{< gallery-img src="auckland.jpg" width="4" height="2" >}}
 
     {{< gallery-img src="" width="1" height="2" >}}
-    {{< gallery-img src="castle.jpg" width="5" height="5" >}}
+    {{< gallery-img src="budapest.jpg" width="5" height="5" >}}
 
     {{< gallery-img src="lego.jpg" width="2" height="1" >}}
 
-    {{< gallery-img src="" width="3" height="1" >}}
+    {{< gallery-img src="podcast.jpg" width="3" height="1" >}}
 {{< /gallery >}}
-

@@ -5,3 +5,20 @@
     color: var(--clr-highlight);
     font-size: 3rem;
 }
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (min-width: 1024px) {
+        margin: 0 8%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        margin: 0 12%;
+    }
+
+    @media screen and (min-width: 2560px) {
+        margin: 0 18%;
+    }
+}
