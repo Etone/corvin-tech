@@ -1,0 +1,45 @@
+<style>
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        aspect-ratio: 1;
+        gap: 10px;
+        grid-auto-rows: auto;
+        grid-auto-flow: dense;
+
+        & figure {
+            border: var(--clr-text) solid 3px;
+            border-radius: 2rem;
+            overflow: hidden;
+            margin: 0;
+
+
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+                opacity: 25%;
+                filter: saturate(20%);
+                transition: all 0.25s ease;
+            }
+
+            &:hover {
+                border-color: var(--clr-highlight-2);
+                color: var(--clr-highlight-1);
+                
+                & img {
+                    opacity: 1;
+                    filter: saturate(1);
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+</style>
+
+<section class="gallery">
+    {{ .Inner }}
+</section>

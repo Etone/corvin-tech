@@ -1,19 +1,7 @@
-:root {
-    --square-side-length: 112;
-}
-
-.skill-square {
-    width: min(50vh, 50vw);
-    aspect-ratio: 1;
+.heading {
+    height: 30vh;
     display: grid;
-    grid-template-columns: repeat(var(--square-side-length), 1fr);
-    grid-template-rows: repeat(var(--square-side-length), 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.square {
-    border: 1px solid white;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
+    place-items: center;
+    color: var(--clr-highlight);
+    font-size: 3rem;
 }
