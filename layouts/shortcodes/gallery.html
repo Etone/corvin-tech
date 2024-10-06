@@ -1,8 +1,11 @@
 <style>
+    :root {
+        --gallery-size: {{ .Get 0 }}
+    }
     .gallery {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(var(--gallery-size), 1fr);
+        grid-template-rows: repeat(var(--gallery-size), 1fr);
         aspect-ratio: 1;
         gap: 10px;
         grid-auto-rows: auto;
@@ -29,7 +32,7 @@
             &:hover {
                 border-color: var(--clr-highlight-2);
                 color: var(--clr-highlight-1);
-                
+
                 & img {
                     opacity: 1;
                     filter: saturate(1);
