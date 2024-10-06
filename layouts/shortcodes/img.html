@@ -1,0 +1,45 @@
+{{ $height := .Get "height" }}
+{{ $width := .Get "width" }}
+{{ $alt := .Get "alt" }}
+{{ $id := .Get "id" }}
+{{ $taken_at := .Get "taken_at" }}
+
+{{ $content := .Inner }}
+
+<script>
+    function openModal(id) {
+        let modal = document.getElementById("gallery-modal-{{ $id }}");
+        modal.showModal();
+    }
+
+    function closeModal(id) {
+        let modal = document.getElementById("gallery-modal-{{ $id }}");
+        modal.close();
+    }
+</script>
+
+{{/*  Page Bundle Resource, needs special treatment  */}}
+{{ with .Page.Resources.GetMatch (.Get "src") }}
+    <figure id="img-{{ $id }}" class="gallery-fig" style="grid-row: auto / span {{ $height }}; grid-column: auto / span {{ $width }}">
+        <img src="{{ . }}" alt="{{ $alt }}" onclick="openModal('{{ $id }}')"/>
+    </figure>
+
+    <dialog class="gallery-modal" id="gallery-modal-{{ $id }}">
+        <div class="gallery-modal-header">
+            <i class="fa-solid fa-x fa-xl" onclick="closeModal('{{ $id }}')"></i>
+        </div>
+        <div class="gallery-modal-content">
+            <figure>
+                <img src="{{ . }}" alt="{{ $alt }}" />
+                <figcaption>shot at {{ $taken_at }}</figcaption>
+            </figure>
+            <section>{{ $content }}</section>
+        </div>
+    </dialog>
+
+{{ else }}
+    <figure style="grid-row: auto / span {{ $height }}; grid-column: auto / span {{ $width }}">
+        <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" />
+    </figure>
+{{ end }}
+

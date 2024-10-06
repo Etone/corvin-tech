@@ -9,13 +9,16 @@ archived: false
 tags: []
 ---
 {{< gallery 8 >}}
-    {{< gallery-img src="speaker.jpg" width="3" height="8" >}}
-    {{< gallery-img src="auckland.jpg" width="4" height="2" >}}
+    {{% img src="speaker.jpg" alt="Speaking at ContainerDays 2022" width="3" height="8" id="speaker" taken_at="ContainerDays 2022"%}}
+# Public Speaking
 
-    {{< gallery-img src="" width="1" height="2" >}}
-    {{< gallery-img src="budapest.jpg" width="5" height="5" >}}
+Sharing my Knowledge and my passion is very important to me. So i decided very early in my carrer to visit conferences not only to learn cool new technologies, but also to showcase my experiences in the topics **Cloud Enablement**, **Cloud Native Development**, **the broader Kuberneter eco system** and **Real world usecases of AI**. 
 
-    {{< gallery-img src="lego.jpg" width="2" height="1" >}}
+In my talks I focus on the team, sharing my experiences as well as showing life demonstrations of the topic. 
 
-    {{< gallery-img src="podcast.jpg" width="3" height="1" >}}
+Recently, I have expanded my focus to AI usecases in the real world, showcasing how AI can be used in real applications and is not only a hype.
+
+For more information, please check out my [list of talks](/talks)
+
+    {{% /img %}}
 {{< /gallery >}}
