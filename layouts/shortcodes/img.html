@@ -5,10 +5,11 @@
 {{ $taken_at := .Get "taken_at" }}
 
 {{ $content := .Inner }}
+{{ $image := .Page.Resources.GetMatch (.Get "src") }}
 
 
 {{/* Page Bundle Resource, needs special treatment */}}
-{{ with .Page.Resources.GetMatch (.Get "src") }}
+{{ with $image }}
 <figure id="img-{{ $id }}" class="gallery-fig"
     style="grid-row: auto / span {{ $height }}; grid-column: auto / span {{ $width }}">
     <img src="{{ . }}" alt="{{ $alt }}" onclick="openModal('{{ $id }}')" />
@@ -22,7 +23,7 @@
         <div class="gallery-modal-content">
             <figure>
                 <img src="{{ . }}" alt="{{ $alt }}" />
-                <figcaption>shot at {{ $taken_at }}</figcaption>
+                <figcaption>foto shot at {{ $taken_at }}</figcaption>
             </figure>
             <section>{{ $content }}</section>
         </div>
