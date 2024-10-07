@@ -21,43 +21,65 @@
 }
 
 .gallery-modal {
-    position: relative;
+    width: 80vw;
+    height: 80vh;
+
+    /* Fix this by correctly sizing img */
+    overflow: hidden;
+
     padding: 0;
-    
-    & .gallery-modal-header {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-    }
+    border-radius: 15px;
 
-    & .gallery-modal-content {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 15px;
-
-        & figure {
-            margin: 0;
-            position: relative;
-
-            & figcaption {
-                position: absolute;
-                right: 2px;
-                bottom: 2px;
-
-                font-size: 0.75rem;
-            }
-
-            & img {
-                object-fit: scale-down;
-            }
+    & .gallery-modal-container {
+        position: relative;
+        & .gallery-modal-header {
+            position: absolute;
+            top: 15px;
+            right: 15px;
         }
 
-        & section {
-            & a {
-                color: var(--clr-highlight-gradient);
-                text-decoration: underline;
+        & .gallery-modal-content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 15px;
+
+            width: 100%;
+            height: 100%;
+
+            & figure {
+                display: block;
+                margin: 0;
+                position: relative;
+
+                width: 100%;
+                height: 100%;
+
+                & figcaption {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 2px;
+
+                    font-size: 0.75rem;
+                }
+
+                & img {
+                    display: block;
+
+                    width: 100%;
+                    height: 100%;
+
+                    object-fit: cover;
+                }
+            }
+
+            & section {
+                padding: 0 20px 0 0;
+
+                & a {
+                    color: var(--clr-highlight-gradient);
+                    text-decoration: underline;
+                }
             }
         }
     }
 }
-
