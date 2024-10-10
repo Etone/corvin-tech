@@ -1,46 +1,10 @@
 <style>
     :root {
-        --gallery-size: {{ .Get 0 }}
+        --gallery-width: {{ .Get 0 }};
+        --gallery-height: {{ .Get 1 }};
     }
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(var(--gallery-size), 1fr);
-        grid-template-rows: repeat(var(--gallery-size), 1fr);
-        aspect-ratio: 1;
-        gap: 10px;
-        grid-auto-rows: auto;
-        grid-auto-flow: dense;
-
-        & .gallery-fig {
-            border: var(--clr-text) solid 3px;
-            border-radius: 2rem;
-            overflow: hidden;
-            margin: 0;
-
-            & img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-
-                opacity: 25%;
-                filter: saturate(20%);
-                transition: all 0.25s ease;
-            }
-
-            &:hover {
-                border-color: var(--clr-highlight-2);
-                color: var(--clr-highlight-1);
-
-                & img {
-                    opacity: 1;
-                    filter: saturate(1);
-                    transition: all 0.5s ease;
-                }
-            }
-        }
-    }
+    
 </style>
-
 <script>
     function openModal(id) {
         console.log("open modal with id", id)
@@ -52,6 +16,11 @@
         console.log("close modal with id", id)
         let modal = document.getElementById(`gallery-modal-${id}`);
         modal.close();
+    }
+
+    function scrollToBottom(id) {
+        let modal = document.getElementById(`gallery-modal-${id}`);
+        modal.scrollTo(0, modal.scrollHeight);
     }
 </script>
 

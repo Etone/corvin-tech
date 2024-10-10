@@ -8,7 +8,7 @@ categories: [private]
 archived: false
 tags: []
 ---
-{{< gallery 8 >}}
+{{< gallery 8 10>}}
     {{% img src="speaker.jpg" alt="Speaking at ContainerDays 2022" width="3" height="8" id="speaker" taken_at="ContainerDays 2022" %}}
 # Public Speaking
 
@@ -35,4 +35,8 @@ For more information, please check out my [list of talks](/talks)
 
     {{% img src="podcast.jpg" alt="Me while recording a podcast" width="3" height="1" id="podcast" taken_at="Novatec Podcast Studio, 2024"%}}
     {{% /img %}}
+    
+    {{% img src="coffee_table.jpg" alt="DIY coffee table made out of oak" width="8" height="2" id="woodworking" taken_at="my living room, 2024"%}}
+    {{% /img %}}
+    
 {{< /gallery >}}
