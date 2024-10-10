@@ -4,6 +4,9 @@ title: Corvin.Tech
 
 menu:
   main:
+    - name: About
+      pageRef: /about
+      weight: 5
     - name: Talks
       pageRef: /talks
       weight: 10
