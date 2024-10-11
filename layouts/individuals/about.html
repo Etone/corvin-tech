@@ -3,23 +3,12 @@
 {{ end }}
 
 {{ define "main" }}
-<script>
-  function clickedImage(content) {
-    let description = document.getElementById("gallery-description");
-    description.innerHTML = content;
-    description.firstChild.scrollIntoView();
-  }
-</script>
 <div>
   <section class="heading">
     <h1>{{ .Title }}</h1>
   </section>
   <section class="content-container">
-    <section class="image-gallery">
-      {{ .Content }}
-    </section>
-    <section class="description-text" id="gallery-description">
-    </section>
+    {{ .Content }}
   </section>
 </div>
 {{ end }}
