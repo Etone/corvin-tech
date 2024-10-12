@@ -1,24 +1,18 @@
 {{ $src := .Get "src" }}
 {{ $alt := .Get "alt" }}
-{{ $position := .Get "position" }}
 {{ $content := .Inner }}
 
 <article class="image-banner">
-    {{ if eq $position "right" }}
-        <section>{{ $content | markdownify }}</section>
-    {{ end }}
+    <section>{{ $content | markdownify }}</section>
 
     {{ with .Page.Resources.GetMatch $src }}
         <figure>
-            <img class="{{ $position }}" src="{{ .RelPermalink }}" alt="{{ $alt }}" />
+            <img src="{{ .RelPermalink }}" alt="{{ $alt }}" />
         </figure>
     {{ else }}
         <figure>
-            <img class="{{ $position }}" src="{{ $src }}" alt="{{ $alt }}" />
+            <img src="{{ $src }}" alt="{{ $alt }}" />
         </figure>
     {{ end }}
 
-    {{ if eq $position "left" }}
-        <section>{{ $content | markdownify }}</section>
-    {{ end }}
 </article>
