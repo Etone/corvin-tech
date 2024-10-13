@@ -5,7 +5,7 @@ header.heading {
 
 
     & h1 {
-        font-size: 6rem; 
+        font-size: 6rem;
     }
 }
 
@@ -32,7 +32,7 @@ header.heading {
         }
 
         & section {
-            @media screen and (min-width: 1024px){
+            @media screen and (min-width: 1024px) {
                 grid-column: 2;
             }
         }
@@ -47,7 +47,7 @@ header.heading {
     & article.image-banner {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 30px;
 
         padding-bottom: 30px;
 
@@ -56,6 +56,10 @@ header.heading {
         }
 
         & section {
+            & h1 {
+                margin-top: 0;
+            }
+
             & a {
                 text-decoration: underline;
             }
@@ -64,13 +68,20 @@ header.heading {
         & figure {
             margin: 0;
             width: auto;
+            position: relative;
 
             & img {
                 width: 100%;
-                aspect-ratio: 16/9;
                 object-fit: cover;
+                aspect-ratio: 16/9;
 
                 opacity: 30%;
+
+
+                @media (any-hover: none) {
+                    opacity: 100%;
+                }
+
                 transition: opacity 0.7s;
             }
         }
