@@ -1,0 +1,20 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption"}}
+
+{{ $content := .Inner }}
+
+<article class="image-banner">
+    <section>{{ $content | markdownify }}</section>
+
+    {{ with .Page.Resources.GetMatch $src }}
+        <figure>
+            <img src="{{ .RelPermalink }}" alt="{{ $alt }}" />
+        </figure>
+    {{ else }}
+        <figure>
+            <img src="{{ $src }}" alt="{{ $alt }}" />
+        </figure>
+    {{ end }}
+
+</article>
