@@ -51,6 +51,10 @@ After three months, I decided to continue my work in tech and focus especially o
 
 {{< img_banner src="lego.jpg" alt="Lego castle with tools in the background" >}}
 # Lego - Create with modular building blocks
+
+In my free time, I enjoy building Lego. Since my job is very creative and forces me to think outside the box a lot, I enjoy the fixed rules when building with Lego and more often than not follow the instructions and marvel over the model that these bricks create.
+
+Recently I started with a small project, building a modular medieval landscape out of legos and sets that I already own. Mostly this was meant as a similar relaxing hobby, but I quickly realized that building with these blocks without instruction is way more mentally taxing than I initially thought. So in very small steps, I hope I will be able to complete this project.
 {{< /img_banner >}}
 
 {{< img_banner src="coffee_table.jpg" alt="DIY coffee table made out of oak" >}}
