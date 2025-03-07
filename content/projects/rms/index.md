@@ -31,7 +31,7 @@ To enable uploads of 3D Models the implementated file handling had to be reworke
 
 ### Replacing the malware and anti-virus solution
 
-The reworked large file handling solution enabled the replacement of a self managed virus scanning solution with azures build in capabilities. This was needed as the self managed scanning solution did not support file streaming, meaning a scan would need to load the whole file into memory, a no go for large IFC models. 
+The reworked large file handling solution enabled the replacement of a self managed virus scanning solution with azures build in capabilities. This was needed as the self managed scanning solution did not support file streaming, meaning a scan would need to load the whole file into memory, a no go for large IFC models.
 
 ### Enabling CD for most of the backend
 
@@ -46,3 +46,4 @@ To reduce our alerting noise we created a less noise, more focused alerting chan
 - [Open Source - Backend](https://github.com/boschglobal/bosch-pt-refinemysite-backend)
 - [Open Source - Frontend](https://github.com/boschglobal/bosch-pt-refinemysite-frontend)
 - Unfortunately the IaC Code will not be open sourced except for a small part in the utilities of the backend to setup a Confluent Cloud Kafka Cluster
+- [Successor Project](https://refinemysite.ai/) - I'm not affiliated with this

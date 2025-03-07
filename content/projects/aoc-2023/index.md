@@ -4,12 +4,12 @@ date: 2023-12-09T18:46:58Z
 draft: false
 categories: [private]
 archived: false
-tags: [Golang]
+tags: [Golang, Java, python]
 ---
 
-## Advent of Code 2023
+## Advent of Code
 
-The repository contains solutions for the [advent of code 2023](https://adventofcode.com/2023). All solutions where written using golang for the first time, so you can quite quickly see how I get used to the language.
+I regularly participate in AoC. In the repo you can find my solves for the days. I usually use Java or Kotlin to solve a Day, but have some Days solves with python, Golang or JS to deepen my knowledge in these languages
 
 ## Repository
-https://github.com/Etone/aoc-2023
+https://github.com/Etone/AdventOfCode.git
