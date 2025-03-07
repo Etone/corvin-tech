@@ -5,7 +5,6 @@ draft: false
 layout: about
 type: individuals
 categories: [private]
-archived: false
 tags: []
 ---
 
